@@ -67,7 +67,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t mt-8 pt-6 text-center text-sm text-muted-foreground">
+        <div className="border-t mt-8 pt-6 text-center text-sm text-muted-foreground space-y-2">
           <p className="flex items-center justify-center gap-1">
             © {currentYear} IN2 Supermart. Built with <Heart className="h-4 w-4 text-red-500 fill-red-500" /> using{' '}
             <a
@@ -79,6 +79,7 @@ export default function Footer() {
               caffeine.ai
             </a>
           </p>
+          <p className="text-sm">Made by Aditya Sharma</p>
         </div>
       </div>
     </footer>
