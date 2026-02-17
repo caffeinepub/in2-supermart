@@ -1,0 +1,104 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-17T08:56:56.033Z",
+  "summary": "Diff adds a new TanStack Router-based multi-page frontend scaffold (Home/About/Categories/Offers/Contact + admin offers route), shared layout with header/footer and floating WhatsApp/call CTAs, marketing components (category cards/quick links, trust indicators, why-choose-us), SEO helper, and substantial backend work for offers with admin authorization checks. Some requested page-specific content (home hero tagline, contact map/address block, offers page sections) and SEO usage per page are not evidenced in the provided diff summary (may exist in omitted files). Backend also includes user profile management and secret-token-based access-control initialization not requested.",
+  "missing_requirements": [
+    {
+      "id": "REQ-3",
+      "requirement": "Home page hero must prominently display the exact tagline “Fresh Groceries. Smart Prices. Near You.” and include required Home sections (offers/promotions, daily essentials, featured categories, trust indicators).",
+      "reason": "HomePage implementation/content is not shown in the diff summary, so the required hero tagline and section content cannot be verified from the provided evidence.",
+      "evidence": [
+        "frontend/src/App.tsx (routes reference HomePage but content not shown)"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "requirement": "Offers & Deals page must include 'Weekly Promotions' and 'Today’s Special Discounts' sections with savings messaging aimed at families and students, and show validity period/placeholder.",
+      "reason": "OffersPage implementation/content is not shown in the diff summary; only generic OfferCard UI is evidenced, not the required page sections/headings or copy.",
+      "evidence": [
+        "frontend/src/App.tsx (routes reference OffersPage but content not shown)",
+        "frontend/src/components/offers/OfferCard.tsx"
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "requirement": "Visit Store / Contact page must show the exact provided address, store hours text, a visible Google Map iframe embed, directions prompt, and a labeled phone placeholder.",
+      "reason": "ContactPage implementation is not shown in the diff summary, so presence of the Google Map iframe and required contact page content cannot be verified.",
+      "evidence": [
+        "frontend/src/App.tsx (routes reference ContactPage but content not shown)"
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "requirement": "Each page should have unique titles/meta descriptions, correct heading hierarchy, structured data (LocalBusiness/GroceryStore) with store name/address, and include target keywords naturally.",
+      "reason": "A reusable Seo component is added, but the diff summary does not show it being used on each page with unique titles/descriptions/keywords or heading hierarchy compliance.",
+      "evidence": [
+        "frontend/src/components/seo/Seo.tsx",
+        "frontend/src/App.tsx (pages referenced but not shown)"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Backend user profile management (get/save caller profile, permissions for 'user' role).",
+      "reason": "BuildRequest explicitly focuses on marketing site + offers management; it does not request shopper/user profile features beyond admin offer management needs.",
+      "evidence": [
+        "backend/main.mo (\"// User Profile Management\", getCallerUserProfile/getUserProfile/saveCallerUserProfile)"
+      ]
+    },
+    {
+      "description": "Secret-token-based access-control initialization from a URL parameter (caffeineAdminToken) during actor creation.",
+      "reason": "REQ-11 calls for Internet Identity authentication and an allowlist of admin principals configurable in code; initializing access control with a secret token from URL parameters is not requested.",
+      "evidence": [
+        "frontend/src/hooks/useActor.ts (getSecretParameter('caffeineAdminToken'), actor._initializeAccessControlWithSecret(adminToken))"
+      ]
+    },
+    {
+      "description": "Footer includes a promotional referral link to caffeine.ai with UTM parameters.",
+      "reason": "Not requested in the BuildRequest; could be considered additional/unspecified marketing attribution.",
+      "evidence": [
+        "frontend/src/components/layout/Footer.tsx (caffeine.ai link with utm_source=Caffeine-footer...)"
+      ]
+    }
+  ],
+  "confidence": 0.58,
+  "changed_files": [
+    "all_files_summary.json",
+    "backend/main.mo",
+    "frontend-file-summaries.txt",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/src/App.tsx",
+    "frontend/src/components/auth/AdminRouteGuard.tsx",
+    "frontend/src/components/auth/LoginButton.tsx",
+    "frontend/src/components/cta/FloatingContactCtas.tsx",
+    "frontend/src/components/layout/Footer.tsx",
+    "frontend/src/components/layout/HeaderNav.tsx",
+    "frontend/src/components/layout/SiteLayout.tsx",
+    "frontend/src/components/marketing/CategoryCard.tsx",
+    "frontend/src/components/marketing/CategoryQuickLinks.tsx",
+    "frontend/src/components/marketing/TrustIndicators.tsx",
+    "frontend/src/components/marketing/WhyChooseUs.tsx",
+    "frontend/src/components/media/ResponsiveImage.tsx",
+    "frontend/src/components/offers/OfferCard.tsx",
+    "frontend/src/components/offers/OfferEditorDialog.tsx",
+    "frontend/src/components/seo/Seo.tsx",
+    "frontend/src/hooks/auth/useCallerRole.ts",
+    "frontend/src/hooks/offers/useActiveOffers.ts",
+    "frontend/src/hooks/offers/useAdminOffers.ts",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/src/pages/AboutPage.tsx",
+    "frontend/src/pages/CategoriesPage.tsx",
+    "frontend/src/pages/ContactPage.tsx",
+    "frontend/src/pages/HomePage.tsx",
+    "frontend/src/pages/OffersPage.tsx",
+    "frontend/src/pages/admin/AdminOffersPage.tsx",
+    "frontend/src/utils/urlParams.ts",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}

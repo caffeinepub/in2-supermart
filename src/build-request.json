@@ -1,0 +1,301 @@
+{
+  "kind": "build_request",
+  "title": "IN2 Supermart Responsive Marketing Website with Offers Management, SEO, and Contact CTAs",
+  "projectName": "IN2 Supermart",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a modern, professional, fully responsive multi-page website for the grocery retail store IN2 Supermart using a bright, welcoming theme (green, orange, and white) with clean typography, mobile-first layouts, and smooth but subtle UI animations.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Create a modern, professional, and fully responsive website for a grocery retail store named IN2 Supermart",
+          "Use a bright, welcoming color scheme (green, orange, and white preferred).",
+          "Clean typography with easy readability.",
+          "Mobile-first responsive layout.",
+          "Modern UI with smooth animations"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Site uses a consistent green/orange/white palette and readable typography across all pages.",
+        "All pages are mobile-first and adapt correctly to common breakpoints (mobile/tablet/desktop).",
+        "Animations are present (e.g., hover, section reveal, carousel transitions) and do not block interaction or reduce readability.",
+        "Design reflects a premium supermarket feel with a local Indian neighborhood market vibe (visual styling only; no new features implied)."
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Implement the required pages and navigation: Home, About Us, Categories, Offers & Deals, and Visit Store / Contact. Ensure navigation works on mobile (hamburger menu) and desktop (top nav), and include a footer with address and quick links.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Pages to Include: Home Page ... About Us ... Categories Section ... Offers & Deals Page ... Visit Store / Contact Page"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Each required page is accessible via client-side navigation and has a distinct route/screen.",
+        "Navigation is usable on mobile and desktop.",
+        "Footer includes store name, full address, and links to the main pages."
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Build the Home page sections and content: hero banner with the tagline “Fresh Groceries. Smart Prices. Near You.”; highlights for offers, daily essentials, and featured categories; quick links to shop categories; and trust indicators emphasizing quality products, affordable pricing, and local convenience.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Hero banner with tagline like: “Fresh Groceries. Smart Prices. Near You.”",
+          "Highlight offers, daily essentials, and featured categories.",
+          "Quick links to shop categories.",
+          "Trust indicators (quality products, affordable pricing, local convenience)."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Home page hero prominently displays the exact tagline text.",
+        "Home page includes sections for offers/promotions, daily essentials, featured categories, and trust indicators.",
+        "Category quick links navigate to the Categories page and/or on-page category section."
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Create an About Us page describing IN2 Supermart as a reliable local grocery destination in Sonipat, focusing on freshness, value-for-money, and customer satisfaction, with friendly-yet-professional tone.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Describe IN2 Supermart as a reliable local grocery destination in Sonipat.",
+          "Focus on freshness, value-for-money, and customer satisfaction.",
+          "Friendly yet professional."
+        ]
+      },
+      "acceptanceCriteria": [
+        "About page copy explicitly mentions Sonipat and emphasizes freshness, value, and customer satisfaction.",
+        "Tone reads friendly yet professional (no slang, no overly corporate wording)."
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Create a Categories page/section displaying clear category cards for: Fruits & Vegetables, Dairy & Bakery, Packaged Foods, Household Essentials, Beverages & Snacks, and Personal Care. Include relevant visuals and concise descriptive subtitles for each category.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Categories Section\nFruits & Vegetables\nDairy & Bakery\nPackaged Foods\nHousehold Essentials\nBeverages & Snacks\nPersonal Care"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All six categories are shown with consistent card styling.",
+        "Each category has a visual (image or illustration) and a short description.",
+        "Layout is responsive (grid on desktop, stacked or 2-column on mobile as appropriate)."
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Implement an Offers & Deals page that shows weekly promotions and a “Today’s Special Discounts” section, highlighting savings messaging aimed at families and students.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Offers & Deals Page\nWeekly promotions\n“Today’s Special Discounts”\nHighlight savings for families and students."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Offers page includes a Weekly Promotions section and a Today’s Special Discounts section with clearly labeled headings.",
+        "Offer cards/banners show at minimum: title, short description, and validity period (or placeholder when not set).",
+        "Copy includes savings-oriented messaging relevant to families and students."
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Add a “Why Choose Us” section (on Home and/or as a dedicated section on a relevant page) listing: Affordable pricing, Wide product range, Convenient neighborhood location, Friendly service, Fresh stock daily.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Why Choose Us Section\nAffordable pricing\nWide product range\nConvenient neighborhood location\nFriendly service\nFresh stock daily"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All five bullets appear in the UI with clear icons or visual emphasis.",
+        "Section is responsive and readable on small screens."
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Create a Visit Store / Contact page that includes: an embedded Google Map (iframe embed acceptable), the full store address (No. 134 Basement, 135P, Sector 23, Sonipat, Haryana – 131001, India), store hours (Open daily, closes at 10 PM), directions prompt, and a contact number placeholder.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Visit Store / Contact Page\nGoogle Map integration.\nStore address and directions.\nStore timing: Open daily, closes at 10 PM.\nContact number placeholder."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Contact page shows the exact provided address text.",
+        "Store hours are displayed and include “Open daily” and “closes at 10 PM”.",
+        "A Google Map embed is visible (using an iframe embed is acceptable).",
+        "A phone number placeholder is visible and clearly labeled."
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Add conversion CTAs site-wide: a floating WhatsApp contact button for quick inquiries and a click-to-call action (tel: link) using the phone placeholder; ensure both are accessible and do not obstruct key content on mobile.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "WhatsApp contact button for quick inquiries.",
+          "Click-to-call feature."
+        ]
+      },
+      "acceptanceCriteria": [
+        "WhatsApp CTA is visible (floating or persistent placement) and links to a WhatsApp action using a placeholder number until finalized.",
+        "Click-to-call uses a tel: link with the same placeholder number.",
+        "On mobile, CTAs do not cover primary navigation or core content (tested on narrow viewport)."
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Implement offer banner management so offers/deals content can be updated without changing frontend code: create backend data structures and API methods to list/create/update/delete offers (including fields for title, description, discount/label, start/end date, and active flag), and create a simple admin UI to manage these offers.",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Offer banner management.",
+          "Easy to update offers and content."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend exposes methods to: fetch active offers (public) and create/update/delete offers (admin-only).",
+        "Frontend Offers page renders from backend-provided offer data and updates after changes without redeploying the frontend.",
+        "Admin UI supports creating, editing, deleting, and toggling active status for offers, and includes validation for required fields (e.g., title)."
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "text": "Protect offer management actions so only authorized store admins can modify offers: use Internet Identity authentication and restrict admin methods in the Motoko canister to an allowlist of admin principals configurable in code (initially a single placeholder admin principal).",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Easy to update offers and content."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Unauthenticated users can view offers but cannot call create/update/delete methods (backend rejects).",
+        "Authenticated non-admin users cannot modify offers (backend rejects).",
+        "Authenticated admin can perform CRUD operations successfully via the admin UI."
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "text": "Implement SEO-ready structure and local SEO optimization: set page titles/meta descriptions, ensure correct heading hierarchy, add structured data (LocalBusiness/GroceryStore schema) with store name and address, and include target keywords: “Supermarket in Sonipat”, “Grocery Store Sector 23 Sonipat”, “Daily Needs Store Near Me”.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "SEO optimization for keywords like:\n“Supermarket in Sonipat”\n“Grocery Store Sector 23 Sonipat”\n“Daily Needs Store Near Me”",
+          "SEO-ready structure.",
+          "Optimized for local search visibility."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Each page has a unique, relevant title and meta description.",
+        "Pages use a sensible H1/H2/H3 hierarchy (one H1 per page).",
+        "Structured data is present and includes store name and full address.",
+        "The specified keywords appear naturally in page copy and/or metadata (not keyword-stuffed)."
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "text": "Optimize performance and loading: ensure images are optimized and responsive, use lazy-loading where appropriate, minimize layout shift for hero/offer sections, and keep animations lightweight.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Fast loading and optimized performance."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Largest images use appropriately sized assets and do not load at full resolution on mobile unnecessarily.",
+        "Non-critical images below the fold are lazy-loaded.",
+        "Hero section renders without major layout shift (no large content jumps after load)."
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "text": "Add high-quality grocery and lifestyle imagery throughout the site (hero, categories, offers) using generated static assets and ensure consistent visual style aligned with a premium supermarket look and local Indian neighborhood feel.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Include high-quality grocery visuals and lifestyle imagery."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hero, category cards, and at least one offers banner include high-quality imagery.",
+        "All imagery is served as static assets from the frontend and looks cohesive in style/color grading.",
+        "Images are responsive and do not appear stretched or pixelated on common screen sizes."
+      ]
+    }
+  ],
+  "constraints": [
+    "Backend must remain a single Motoko actor (no additional backend services).",
+    "Do not edit files in frontend immutablePaths (compose UI components instead of modifying read-only sources).",
+    "Use English for all user-facing website text.",
+    "Google Map integration must be implemented without requiring unsupported third-party backend integrations (iframe embed is acceptable)."
+  ],
+  "nonGoals": [
+    "E-commerce functionality (cart, checkout, payments, inventory, delivery scheduling).",
+    "User accounts for shoppers beyond what is needed for admin offer management.",
+    "Real-time chat or messaging beyond WhatsApp deep link.",
+    "Integration with external CMS platforms (e.g., WordPress) or external databases."
+  ],
+  "imageRequirements": {
+    "required": [
+      "Hero banner image: fresh Indian grocery produce spread with bright, clean premium supermarket aesthetic (in2-hero.dim_1920x900.png)",
+      "Lifestyle image: family shopping in a neighborhood supermarket in India, warm and trustworthy tone (in2-lifestyle.dim_1600x900.png)",
+      "Category image: Fruits & Vegetables fresh colorful produce (cat-fruits-veg.dim_800x600.png)",
+      "Category image: Dairy & Bakery items on clean shelves (cat-dairy-bakery.dim_800x600.png)",
+      "Category image: Packaged Foods aisle-style composition (cat-packaged-foods.dim_800x600.png)",
+      "Category image: Household Essentials cleaning and daily-use products (cat-household.dim_800x600.png)",
+      "Category image: Beverages & Snacks assortment (cat-beverages-snacks.dim_800x600.png)",
+      "Category image: Personal Care products arrangement (cat-personal-care.dim_800x600.png)",
+      "Offers banner image: bright savings/discount grocery-themed background with green/orange accents (in2-offers-banner.dim_1600x500.png)",
+      "Small WhatsApp-style contact sticker/button background (no logo): green rounded chat bubble graphic (whatsapp-cta-bg.dim_256x256.png)"
+    ],
+    "edits": []
+  }
+}

@@ -1,2 +1,3 @@
-# in2-supermart
-Exported from Caffeine project: IN2 Supermart
+## IN2 Supermart
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

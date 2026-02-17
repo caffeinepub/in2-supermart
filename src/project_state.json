@@ -1,0 +1,163 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Build a modern, professional, fully responsive marketing website for IN2 Supermart (grocery retail store in Sonipat, India) with key pages (Home, About, Categories, Offers/Deals, Contact/Visit Store), trust/value messaging, local SEO, and conversion features (WhatsApp, click-to-call, offer management).",
+  "architectural_notes": [
+    "Mobile-first responsive build with modern stack (HTML5/CSS3/JS; optional React or WordPress)",
+    "SEO-ready semantic structure and performance optimization for fast loading",
+    "Provide a simple mechanism to update offers/banners and site content"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Hero banner image: fresh Indian grocery produce spread with bright, clean premium supermarket aesthetic (in2-hero.dim_1920x900.png)\n- Lifestyle image: family shopping in a neighborhood supermarket in India, warm and trustworthy tone (in2-lifestyle.dim_1600x900.png)\n- Category image: Fruits & Vegetables fresh colorful produce (cat-fruits-veg.dim_800x600.png)\n- Category image: Dairy & Bakery items on clean shelves (cat-dairy-bakery.dim_800x600.png)\n- Category image: Packaged Foods aisle-style composition (cat-packaged-foods.dim_800x600.png)\n- Category image: Household Essentials cleaning and daily-use products (cat-household.dim_800x600.png)\n- Category image: Beverages & Snacks assortment (cat-beverages-snacks.dim_800x600.png)\n- Category image: Personal Care products arrangement (cat-personal-care.dim_800x600.png)\n- Offers banner image: bright savings/discount grocery-themed background with green/orange accents (in2-offers-banner.dim_1600x500.png)\n- Small WhatsApp-style contact sticker/button background (no logo): green rounded chat bubble graphic (whatsapp-cta-bg.dim_256x256.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-modern-professional-fully-responsive-multi-page-website-for-the-grocery-retail-store-in2-supermart-using-a-bright-welcoming-theme-green-orange-and-white-with-clean-typography-mobile-first-layouts-and-smooth-but-subtle-ui-animations",
+      "title": "Create a modern, professional, fully responsive multi-page website for the grocery retail store IN2 Supermart using a bright, welcoming theme (green, orange, and white) with clean typography, mobile-first layouts, and smooth but subtle UI animations.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-required-pages-and-navigation-home-about-us-categories-offers-deals-and-visit-store-contact-ensure-navigation-works-on-mobile-hamburger-menu-and-desktop-top-nav-and-include-a-footer-with-address-and-quick-links",
+      "title": "Implement the required pages and navigation: Home, About Us, Categories, Offers & Deals, and Visit Store / Contact. Ensure navigation works on mobile (hamburger menu) and desktop (top nav), and include a footer with address and quick links.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-home-page-sections-and-content-hero-banner-with-the-tagline-fresh-groceries-smart-prices-near-you-highlights-for-offers-daily-essentials-and-featured-categories-quick-links-to-shop-categories-and-trust-indicators-emphasizing-quality-products-affordable-pricing-and-local-convenience",
+      "title": "Build the Home page sections and content: hero banner with the tagline “Fresh Groceries. Smart Prices. Near You.”; highlights for offers, daily essentials, and featured categories; quick links to shop categories; and trust indicators emphasizing quality products, affordable pricing, and local convenience.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-an-about-us-page-describing-in2-supermart-as-a-reliable-local-grocery-destination-in-sonipat-focusing-on-freshness-value-for-money-and-customer-satisfaction-with-friendly-yet-professional-tone",
+      "title": "Create an About Us page describing IN2 Supermart as a reliable local grocery destination in Sonipat, focusing on freshness, value-for-money, and customer satisfaction, with friendly-yet-professional tone.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-categories-page-section-displaying-clear-category-cards-for-fruits-vegetables-dairy-bakery-packaged-foods-household-essentials-beverages-snacks-and-personal-care-include-relevant-visuals-and-concise-descriptive-subtitles-for-each-category",
+      "title": "Create a Categories page/section displaying clear category cards for: Fruits & Vegetables, Dairy & Bakery, Packaged Foods, Household Essentials, Beverages & Snacks, and Personal Care. Include relevant visuals and concise descriptive subtitles for each category.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-an-offers-deals-page-that-shows-weekly-promotions-and-a-today-s-special-discounts-section-highlighting-savings-messaging-aimed-at-families-and-students",
+      "title": "Implement an Offers & Deals page that shows weekly promotions and a “Today’s Special Discounts” section, highlighting savings messaging aimed at families and students.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-why-choose-us-section-on-home-and-or-as-a-dedicated-section-on-a-relevant-page-listing-affordable-pricing-wide-product-range-convenient-neighborhood-location-friendly-service-fresh-stock-daily",
+      "title": "Add a “Why Choose Us” section (on Home and/or as a dedicated section on a relevant page) listing: Affordable pricing, Wide product range, Convenient neighborhood location, Friendly service, Fresh stock daily.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-visit-store-contact-page-that-includes-an-embedded-google-map-iframe-embed-acceptable-the-full-store-address-no-134-basement-135p-sector-23-sonipat-haryana-131001-india-store-hours-open-daily-closes-at-10-pm-directions-prompt-and-a-contact-number-placeholder",
+      "title": "Create a Visit Store / Contact page that includes: an embedded Google Map (iframe embed acceptable), the full store address (No. 134 Basement, 135P, Sector 23, Sonipat, Haryana – 131001, India), store hours (Open daily, closes at 10 PM), directions prompt, and a contact number placeholder.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-conversion-ctas-site-wide-a-floating-whatsapp-contact-button-for-quick-inquiries-and-a-click-to-call-action-tel-link-using-the-phone-placeholder-ensure-both-are-accessible-and-do-not-obstruct-key-content-on-mobile",
+      "title": "Add conversion CTAs site-wide: a floating WhatsApp contact button for quick inquiries and a click-to-call action (tel: link) using the phone placeholder; ensure both are accessible and do not obstruct key content on mobile.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-offer-banner-management-so-offers-deals-content-can-be-updated-without-changing-frontend-code-create-backend-data-structures-and-api-methods-to-list-create-update-delete-offers-including-fields-for-title-description-discount-label-start-end-date-and-active-flag-and-create-a-simple-admin-ui-to-manage-these-offers",
+      "title": "Implement offer banner management so offers/deals content can be updated without changing frontend code: create backend data structures and API methods to list/create/update/delete offers (including fields for title, description, discount/label, start/end date, and active flag), and create a simple admin UI to manage these offers.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-protect-offer-management-actions-so-only-authorized-store-admins-can-modify-offers-use-internet-identity-authentication-and-restrict-admin-methods-in-the-motoko-canister-to-an-allowlist-of-admin-principals-configurable-in-code-initially-a-single-placeholder-admin-principal",
+      "title": "Protect offer management actions so only authorized store admins can modify offers: use Internet Identity authentication and restrict admin methods in the Motoko canister to an allowlist of admin principals configurable in code (initially a single placeholder admin principal).",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-seo-ready-structure-and-local-seo-optimization-set-page-titles-meta-descriptions-ensure-correct-heading-hierarchy-add-structured-data-localbusiness-grocerystore-schema-with-store-name-and-address-and-include-target-keywords-supermarket-in-sonipat-grocery-store-sector-23-sonipat-daily-needs-store-near-me",
+      "title": "Implement SEO-ready structure and local SEO optimization: set page titles/meta descriptions, ensure correct heading hierarchy, add structured data (LocalBusiness/GroceryStore schema) with store name and address, and include target keywords: “Supermarket in Sonipat”, “Grocery Store Sector 23 Sonipat”, “Daily Needs Store Near Me”.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-optimize-performance-and-loading-ensure-images-are-optimized-and-responsive-use-lazy-loading-where-appropriate-minimize-layout-shift-for-hero-offer-sections-and-keep-animations-lightweight",
+      "title": "Optimize performance and loading: ensure images are optimized and responsive, use lazy-loading where appropriate, minimize layout shift for hero/offer sections, and keep animations lightweight.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-high-quality-grocery-and-lifestyle-imagery-throughout-the-site-hero-categories-offers-using-generated-static-assets-and-ensure-consistent-visual-style-aligned-with-a-premium-supermarket-look-and-local-indian-neighborhood-feel",
+      "title": "Add high-quality grocery and lifestyle imagery throughout the site (hero, categories, offers) using generated static assets and ensure consistent visual style aligned with a premium supermarket look and local Indian neighborhood feel.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create responsive retail website UI/UX for IN2 Supermart using green/orange/white theme, clean typography, smooth animations, and local Indian premium supermarket feel",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Implement required pages/sections: Home (hero tagline, offers, categories, trust indicators), About Us, Categories (listed departments), Offers & Deals, Why Choose Us, Visit Store/Contact (map, address, hours, phone placeholder)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Add conversion features: WhatsApp contact button and click-to-call",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Add offer banner management capability (easy to update offers/content)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "SEO-ready structure and local keyword optimization (Supermarket in Sonipat; Grocery Store Sector 23 Sonipat; Daily Needs Store Near Me) with fast loading/performance optimization",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "IN2 Supermart",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
