@@ -1,18 +1,18 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-17T10:57:46.035Z",
+  "generatedAt": "2026-02-18T08:10:01.952Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
   },
   "requirements": {
-    "total": 1,
-    "implemented": 1,
+    "total": 5,
+    "implemented": 5,
     "items": [
       {
-        "id": "REQ-15",
-        "summary": "Update the website footer to include a visible credit line reading \"Made by Aditya Sharma\" in the last (bottom) section of the footer, without removing the existing copyright text and caffeine.ai referral link.",
+        "id": "REQ-16",
+        "summary": "Add a new footer section titled “Website Designed By” inside the existing footer component (frontend/src/components/layout/Footer.tsx) using a clean, modern, premium card-style layout that is visually balanced with the current IN2 Supermart branding and does not overpower it.",
         "status": "implemented",
         "plannedFiles": [
           "frontend/src/components/layout/Footer.tsx"
@@ -20,15 +20,61 @@
         "matchedFiles": [
           "frontend/src/components/layout/Footer.tsx"
         ]
+      },
+      {
+        "id": "REQ-17",
+        "summary": "In the new “Website Designed By” footer card, render the exact provided English content: Name “Aditya Sharma”; Title “Website Designer & Digital Creator”; the full description paragraph; CTA line “Need a Website for Your Business?”; and a small line at the bottom reading “Designed with dedication by Aditya Sharma”.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/layout/Footer.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/layout/Footer.tsx"
+        ]
+      },
+      {
+        "id": "REQ-18",
+        "summary": "Add an Instagram contact button in the new footer card labeled “Contact Me on Instagram” that links to https://instagram.com/aditya.sharma.30, includes an Instagram icon, and has a subtle hover animation.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/layout/Footer.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/layout/Footer.tsx"
+        ]
+      },
+      {
+        "id": "REQ-19",
+        "summary": "Keep the existing footer bottom credit line “Made by Aditya Sharma” and the existing copyright line with the caffeine.ai referral link unchanged while adding the new “Website Designed By” section.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/layout/Footer.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/layout/Footer.tsx"
+        ]
+      },
+      {
+        "id": "REQ-20",
+        "summary": "Add the designer photo as a static generated asset under frontend/public/assets/generated and display it in the new footer card as a circular portrait (cropped to a circle) with appropriate sizing across breakpoints.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/public/assets/generated/designer-photo.dim_320x320.png",
+          "frontend/src/components/layout/Footer.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/public/assets/generated/designer-photo.dim_320x320.png",
+          "frontend/src/components/layout/Footer.tsx"
+        ]
       }
     ]
   },
   "changedFiles": [
     "build-request.json",
-    "build-template/README.md",
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
+    "frontend/public/assets/generated/designer-photo.dim_320x320.png",
     "frontend/src/components/layout/Footer.tsx",
     "project_state.json",
     "scratch/component-selection.json",

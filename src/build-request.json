@@ -1,38 +1,128 @@
 {
   "kind": "build_request",
-  "title": "Add footer credit 'Made by Aditya Sharma'",
+  "title": "Add “Website Designed By” designer card section to footer",
   "projectName": "IN2 Supermart",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-15",
-      "text": "Update the website footer to include a visible credit line reading \"Made by Aditya Sharma\" in the last (bottom) section of the footer, without removing the existing copyright text and caffeine.ai referral link.",
+      "id": "REQ-16",
+      "text": "Add a new footer section titled “Website Designed By” inside the existing footer component (frontend/src/components/layout/Footer.tsx) using a clean, modern, premium card-style layout that is visually balanced with the current IN2 Supermart branding and does not overpower it.",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-4"
+          "msg-7"
         ],
         "quotes": [
-          "In the last add make by aditya  sharma"
+          "Add a new professional section in the footer called:\n\n“Website Designed By”\n\nLayout Style:\n• Clean modern card-style layout\n• Place a circular professional photo on the left\n• Text content on the right\n• Soft background color different from footer (light grey or gradient)\n• Make it look premium but simple\n• Fully responsive for mobile view"
         ]
       },
       "acceptanceCriteria": [
-        "On all pages, the footer bottom area shows the text \"Made by Aditya Sharma\" in English.",
-        "The existing footer content (including the © year/IN2 Supermart text and the caffeine.ai link) remains present and functional.",
-        "The added credit is responsive and does not break layout on mobile or desktop."
+        "A distinct “Website Designed By” section appears within the footer without removing or breaking existing footer sections/content.",
+        "The section is presented as a card with a soft light-grey or subtle gradient background that is visually distinct from the footer background.",
+        "Desktop/tablet layout shows a circular designer photo on the left and the text content on the right.",
+        "Mobile layout stacks content responsively (photo and text remain readable, with no overflow or cramped spacing).",
+        "Typography and spacing match the site’s existing premium, clean style (Tailwind-based), and the section does not visually dominate the footer."
+      ]
+    },
+    {
+      "id": "REQ-17",
+      "text": "In the new “Website Designed By” footer card, render the exact provided English content: Name “Aditya Sharma”; Title “Website Designer & Digital Creator”; the full description paragraph; CTA line “Need a Website for Your Business?”; and a small line at the bottom reading “Designed with dedication by Aditya Sharma”.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-7"
+        ],
+        "quotes": [
+          "Content to Add:\n\nName: Aditya Sharma\nTitle: Website Designer & Digital Creator\n\nDescription:\nAditya Sharma is a passionate young website designer dedicated to creating modern, user-friendly, and business-focused websites. At just 17, he specializes in designing clean, responsive, and high-converting websites that help local businesses build a strong online presence. His goal is to combine creativity with functionality to deliver professional digital experiences that drive real results.\n\nCall To Action:\n“Need a Website for Your Business?”\n\nDesign Requirements:\n• Add a small line at bottom:\n“Designed with dedication by Aditya Sharma”"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The displayed name, title, description, CTA line, and the bottom dedication line exactly match the user-provided text (English) including punctuation and capitalization.",
+        "The dedication line is visually secondary (smaller/muted) but clearly readable."
+      ]
+    },
+    {
+      "id": "REQ-18",
+      "text": "Add an Instagram contact button in the new footer card labeled “Contact Me on Instagram” that links to https://instagram.com/aditya.sharma.30, includes an Instagram icon, and has a subtle hover animation.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-7"
+        ],
+        "quotes": [
+          "Add a button:\n“Contact Me on Instagram”\n\nInstagram Link:\nhttps://instagram.com/aditya.sharma.30\n\nDesign Requirements:\n• Add subtle hover animation on button\n• Show Instagram icon with the button"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The button label reads exactly “Contact Me on Instagram”.",
+        "Clicking the button navigates to https://instagram.com/aditya.sharma.30 (opens in a new tab with safe rel attributes).",
+        "An Instagram icon is visible inside the button alongside the label.",
+        "The button has a subtle hover/focus interaction (e.g., slight lift/brightness/ring) consistent with the site styling.",
+        "The button remains usable and appropriately sized on mobile."
+      ]
+    },
+    {
+      "id": "REQ-19",
+      "text": "Keep the existing footer bottom credit line “Made by Aditya Sharma” and the existing copyright line with the caffeine.ai referral link unchanged while adding the new “Website Designed By” section.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-7"
+        ],
+        "quotes": [
+          "Add a new professional section in the footer called:\n\n“Website Designed By”"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The existing bottom section still shows the caffeine.ai referral link and the “Made by Aditya Sharma” line as currently rendered in frontend/src/components/layout/Footer.tsx.",
+        "No existing footer links (Quick Links) or store information are removed."
+      ]
+    },
+    {
+      "id": "REQ-20",
+      "text": "Add the designer photo as a static generated asset under frontend/public/assets/generated and display it in the new footer card as a circular portrait (cropped to a circle) with appropriate sizing across breakpoints.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-7"
+        ],
+        "quotes": [
+          "Place a circular professional photo on the left"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A new image file exists under frontend/public/assets/generated and is referenced directly by the footer (no backend image serving).",
+        "The photo is displayed as a circle (e.g., rounded-full) and does not appear stretched or distorted.",
+        "The image is appropriately sized on mobile and desktop and includes an informative alt attribute."
       ]
     }
   ],
   "constraints": [
-    "Do not modify any frontend files under frontend/src/components/ui or any other paths listed as immutable in SYSTEM_CONTEXT.",
-    "Keep the existing caffeine.ai referral link in the footer intact (URL and tracking query parameters)."
+    "Do not edit any files under frontend/src/components/ui (read-only).",
+    "Do not modify frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, or frontend/src/main.tsx (immutable paths).",
+    "Backend changes are not required for this footer-only update.",
+    "Preserve existing footer content including the caffeine.ai referral link and the existing “Made by Aditya Sharma” line."
   ],
   "nonGoals": [
-    "Do not change site navigation, page content, or offer/admin functionality beyond adding the footer credit line.",
-    "Do not add new authentication, backend logic, or data models for this request."
+    "Do not add new pages or routes.",
+    "Do not add or change authentication/Internet Identity behavior.",
+    "Do not add any backend storage or admin management for designer details.",
+    "Do not change the store contact details, address, hours, or existing footer navigation."
   ],
   "imageRequirements": {
-    "required": [],
+    "required": [
+      "Professional headshot portrait photo of a young male (designer-photo.dim_320x320.png)"
+    ],
     "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
   }
 }

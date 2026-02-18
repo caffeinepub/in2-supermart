@@ -1,21 +1,92 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "IN2 Supermart — Add footer credit line",
+  "title": "IN2 Supermart — Add “Website Designed By” footer designer card",
   "requirements": [
     {
-      "id": "REQ-15",
-      "summary": "Add a visible “Made by Aditya Sharma” credit line to the footer bottom section while preserving existing copyright and caffeine.ai referral link.",
+      "id": "REQ-16",
+      "summary": "Add a new “Website Designed By” card-style section inside the existing footer, premium and responsive without overpowering the brand.",
       "acceptanceCriteria": [
-        "On all pages, the footer bottom area shows the text \"Made by Aditya Sharma\" in English.",
-        "The existing footer content (including the © year/IN2 Supermart text and the caffeine.ai link) remains present and functional.",
-        "The added credit is responsive and does not break layout on mobile or desktop."
+        "A distinct “Website Designed By” section appears within the footer without removing or breaking existing footer sections/content.",
+        "The section is presented as a card with a soft light-grey or subtle gradient background that is visually distinct from the footer background.",
+        "Desktop/tablet layout shows a circular designer photo on the left and the text content on the right.",
+        "Mobile layout stacks content responsively (photo and text remain readable, with no overflow or cramped spacing).",
+        "Typography and spacing match the site’s existing premium, clean style (Tailwind-based), and the section does not visually dominate the footer."
       ],
       "file_operations": [
         {
           "path": "frontend/src/components/layout/Footer.tsx",
           "operation": "modify",
-          "description": "Update the bottom footer section to render an additional visible line reading \"Made by Aditya Sharma\" beneath (or alongside, responsively) the existing copyright/referral row. Keep the existing caffeine.ai referral link intact, including its URL and tracking query parameters, and do not remove or alter the current copyright text."
+          "description": "Insert a new “Website Designed By” section (card-style container) within the footer layout (between the existing 3-column grid and the bottom credit area), using Tailwind classes for a soft light-grey/subtle gradient background, balanced spacing, and responsive layout (row on md+, stacked on mobile)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-17",
+      "summary": "Render the exact provided English designer content inside the new footer card, including the secondary dedication line.",
+      "acceptanceCriteria": [
+        "The displayed name, title, description, CTA line, and the bottom dedication line exactly match the user-provided text (English) including punctuation and capitalization.",
+        "The dedication line is visually secondary (smaller/muted) but clearly readable."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/layout/Footer.tsx",
+          "operation": "modify",
+          "description": "Add the exact provided text content (Name “Aditya Sharma”; Title “Website Designer & Digital Creator”; full description paragraph; CTA line “Need a Website for Your Business?”; and “Designed with dedication by Aditya Sharma”) into the new footer card with appropriate typography hierarchy and muted styling for the dedication line."
+        }
+      ]
+    },
+    {
+      "id": "REQ-18",
+      "summary": "Add an Instagram contact button with icon and subtle hover animation linking to the provided Instagram URL.",
+      "acceptanceCriteria": [
+        "The button label reads exactly “Contact Me on Instagram”.",
+        "Clicking the button navigates to https://instagram.com/aditya.sharma.30 (opens in a new tab with safe rel attributes).",
+        "An Instagram icon is visible inside the button alongside the label.",
+        "The button has a subtle hover/focus interaction (e.g., slight lift/brightness/ring) consistent with the site styling.",
+        "The button remains usable and appropriately sized on mobile."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/layout/Footer.tsx",
+          "operation": "modify",
+          "description": "Add a “Contact Me on Instagram” button within the new designer card that links to https://instagram.com/aditya.sharma.30 using target=\"_blank\" and rel=\"noopener noreferrer\"; include an Instagram icon (e.g., from the existing icon library used in this file) and Tailwind-based hover/focus animation consistent with the site’s style."
+        }
+      ]
+    },
+    {
+      "id": "REQ-19",
+      "summary": "Preserve the existing footer bottom credit (“Made by Aditya Sharma”) and the caffeine.ai referral link exactly as currently rendered.",
+      "acceptanceCriteria": [
+        "The existing bottom section still shows the caffeine.ai referral link and the “Made by Aditya Sharma” line as currently rendered in frontend/src/components/layout/Footer.tsx.",
+        "No existing footer links (Quick Links) or store information are removed."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/layout/Footer.tsx",
+          "operation": "modify",
+          "description": "Ensure the new designer card is added without changing/removing the existing bottom credit block, including the caffeine.ai referral link markup and the “Made by Aditya Sharma” line, and without altering existing store info, quick links, or category text."
+        }
+      ]
+    },
+    {
+      "id": "REQ-20",
+      "summary": "Add and display a static generated designer portrait image from frontend/public/assets/generated as a circular photo in the new footer card.",
+      "acceptanceCriteria": [
+        "A new image file exists under frontend/public/assets/generated and is referenced directly by the footer (no backend image serving).",
+        "The photo is displayed as a circle (e.g., rounded-full) and does not appear stretched or distorted.",
+        "The image is appropriately sized on mobile and desktop and includes an informative alt attribute."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/generated/designer-photo.dim_320x320.png",
+          "operation": "create",
+          "description": "Add the generated static designer portrait asset at frontend/public/assets/generated/designer-photo.dim_320x320.png for use in the footer designer card."
+        },
+        {
+          "path": "frontend/src/components/layout/Footer.tsx",
+          "operation": "modify",
+          "description": "Reference and render frontend/public/assets/generated/designer-photo.dim_320x320.png in the new “Website Designed By” card as a circular portrait (e.g., rounded-full, object-cover) with responsive sizing across breakpoints and an informative alt attribute."
         }
       ]
     }

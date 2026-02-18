@@ -4,7 +4,7 @@
   "frontend/src/App.tsx": "Main application component with TanStack Router setup for all pages (Home, About, Categories, Offers, Contact, Admin) and theme provider integration.",
   "frontend/src/components/layout/SiteLayout.tsx": "Shared layout wrapper component that composes header navigation, footer, and floating contact CTAs around page content.",
   "frontend/src/components/layout/HeaderNav.tsx": "Responsive header navigation with desktop menu, mobile sheet drawer, logo, and conditional admin link based on user role.",
-  "frontend/src/components/layout/Footer.tsx": "Site footer with store information, address, quick links, category list, Caffeine.ai attribution with UTM tracking, and \"Made by Aditya Sharma\" credit line.",
+  "frontend/src/components/layout/Footer.tsx": "Site footer with store information, quick links, categories, a new premium \"Website Designed By\" card section featuring designer Aditya Sharma with photo and Instagram CTA, and bottom credits including caffeine.ai attribution.",
   "frontend/src/components/cta/FloatingContactCtas.tsx": "Floating WhatsApp and phone call buttons positioned in bottom-right corner with tooltips and accessible labels.",
   "frontend/src/components/auth/LoginButton.tsx": "Internet Identity login/logout button with loading states and query cache clearing on logout.",
   "frontend/src/components/auth/AdminRouteGuard.tsx": "Route guard component that restricts admin pages to authenticated administrators with appropriate error messages.",

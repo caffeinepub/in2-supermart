@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 5,
+  "projectStateVersion": 7,
   "summary": "Build a modern, professional, fully responsive marketing website for IN2 Supermart (grocery retail store in Sonipat, India) with key pages (Home, About, Categories, Offers/Deals, Contact/Visit Store), trust/value messaging, local SEO, and conversion features (WhatsApp, click-to-call, offer management).",
   "architectural_notes": [
     "Mobile-first responsive build with modern stack (HTML5/CSS3/JS; optional React or WordPress)",
@@ -9,6 +9,7 @@
   ],
   "known_issues": [],
   "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Professional headshot portrait photo of a young male (designer-photo.dim_320x320.png)",
   "existing_features": [
     {
       "id": "feature-create-a-modern-professional-fully-responsive-multi-page-website-for-the-grocery-retail-store-in2-supermart-using-a-bright-welcoming-theme-green-orange-and-white-with-clean-typography-mobile-first-layouts-and-smooth-but-subtle-ui-animations",
@@ -129,6 +130,46 @@
         "REQ-15"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-add-a-new-footer-section-titled-website-designed-by-inside-the-existing-footer-component-frontend-src-components-layout-footer-tsx-using-a-clean-modern-premium-card-style-layout-that-is-visually-balanced-with-the-current-in2-supermart-branding-and-does-not-overpower-it",
+      "title": "Add a new footer section titled “Website Designed By” inside the existing footer component (frontend/src/components/layout/Footer.tsx) using a clean, modern, premium card-style layout that is visually balanced with the current IN2 Supermart branding and does not overpower it.",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-the-new-website-designed-by-footer-card-render-the-exact-provided-english-content-name-aditya-sharma-title-website-designer-digital-creator-the-full-description-paragraph-cta-line-need-a-website-for-your-business-and-a-small-line-at-the-bottom-reading-designed-with-dedication-by-aditya-sharma",
+      "title": "In the new “Website Designed By” footer card, render the exact provided English content: Name “Aditya Sharma”; Title “Website Designer & Digital Creator”; the full description paragraph; CTA line “Need a Website for Your Business?”; and a small line at the bottom reading “Designed with dedication by Aditya Sharma”.",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-an-instagram-contact-button-in-the-new-footer-card-labeled-contact-me-on-instagram-that-links-to-https-instagram-com-aditya-sharma-30-includes-an-instagram-icon-and-has-a-subtle-hover-animation",
+      "title": "Add an Instagram contact button in the new footer card labeled “Contact Me on Instagram” that links to https://instagram.com/aditya.sharma.30, includes an Instagram icon, and has a subtle hover animation.",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-keep-the-existing-footer-bottom-credit-line-made-by-aditya-sharma-and-the-existing-copyright-line-with-the-caffeine-ai-referral-link-unchanged-while-adding-the-new-website-designed-by-section",
+      "title": "Keep the existing footer bottom credit line “Made by Aditya Sharma” and the existing copyright line with the caffeine.ai referral link unchanged while adding the new “Website Designed By” section.",
+      "reqIds": [
+        "REQ-19"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-designer-photo-as-a-static-generated-asset-under-frontend-public-assets-generated-and-display-it-in-the-new-footer-card-as-a-circular-portrait-cropped-to-a-circle-with-appropriate-sizing-across-breakpoints",
+      "title": "Add the designer photo as a static generated asset under frontend/public/assets/generated and display it in the new footer card as a circular portrait (cropped to a circle) with appropriate sizing across breakpoints.",
+      "reqIds": [
+        "REQ-20"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -163,8 +204,8 @@
       "status": "pending"
     },
     {
-      "id": "AR-6",
-      "summary": "Add footer/site credit text (e.g., “Made by Aditya Sharma”) on the website, likely in the last section/footer",
+      "id": "AR-7",
+      "summary": "Add a premium, responsive “Website Designed By” card-style section in the footer with circular designer photo (left), text (right), CTA (“Need a Website for Your Business?”) and an Instagram contact button (with icon, hover animation) linking to https://instagram.com/aditya.sharma.30, plus small line “Designed with dedication by Aditya Sharma”, ensuring it doesn’t overpower main branding",
       "reqIds": [],
       "status": "pending"
     }

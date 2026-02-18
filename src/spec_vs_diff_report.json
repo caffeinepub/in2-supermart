@@ -1,11 +1,21 @@
 {
   "kind": "spec_vs_diff_report",
   "version": "1.0",
-  "generatedAt": "2026-02-17T10:57:46.032Z",
-  "summary": "REQ-15 appears implemented: the footer bottom section now includes a visible \"Made by Aditya Sharma\" line while retaining the existing © year/IN2 Supermart text and the caffeine.ai referral link with UTM parameters.",
-  "missing_requirements": [],
+  "generatedAt": "2026-02-18T08:10:01.948Z",
+  "summary": "Footer.tsx was updated to add a new “Website Designed By” section and include an Instagram icon import. However, the diff shows no newly added static image asset under frontend/public/assets/generated, which is required for the designer photo.",
+  "missing_requirements": [
+    {
+      "id": "REQ-20",
+      "requirement": "Add the designer photo as a static generated asset under frontend/public/assets/generated and display it in the new footer card as a circular portrait (cropped to a circle) with appropriate sizing across breakpoints.",
+      "reason": "The footer references an image at /assets/generated/designer-photo.dim_320x320.png, but the diff indicates no added files, so the required new static asset does not appear to have been created/committed under frontend/public/assets/generated.",
+      "evidence": [
+        "File diff summary: \"ADDED FILES: - none\"",
+        "frontend/src/components/layout/Footer.tsx (references src=\"/assets/generated/designer-photo.dim_320x320.png\")"
+      ]
+    }
+  ],
   "hallucinated_features": [],
-  "confidence": 0.78,
+  "confidence": 0.72,
   "changed_files": [
     "frontend-file-summaries.txt",
     "frontend/src/components/layout/Footer.tsx",

@@ -2,8 +2,8 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-update-the-website-footer-to-include-a-visible-credit-line-reading-made-by-aditya-sharma-in-the-last-bottom-section-of-the-footer-without-removing-the-existing-copyright-text-and-caffeine-ai-referral-link",
-      "featureTitle": "Update the website footer to include a visible credit line reading \"Made by Aditya Sharma\" in the last (bottom) section of the footer, without removing the existing copyright text and caffeine.ai referral link.",
+      "featureId": "feature-add-a-new-footer-section-titled-website-designed-by-inside-the-existing-footer-component-frontend-src-components-layout-footer-tsx-using-a-clean-modern-premium-card-style-layout-that-is-visually-balanced-with-the-current-in2-supermart-branding-and-does-not-overpower-it",
+      "featureTitle": "Add a new footer section titled “Website Designed By” inside the existing footer component (frontend/src/components/layout/Footer.tsx) using a clean, modern, premium card-style layout that is visually balanced with the current IN2 Supermart branding and does not overpower it.",
       "files": [
         "frontend/src/components/layout/Footer.tsx"
       ],
@@ -16,7 +16,83 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-15"
+        "REQ-16"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-in-the-new-website-designed-by-footer-card-render-the-exact-provided-english-content-name-aditya-sharma-title-website-designer-digital-creator-the-full-description-paragraph-cta-line-need-a-website-for-your-business-and-a-small-line-at-the-bottom-reading-designed-with-dedication-by-aditya-sharma",
+      "featureTitle": "In the new “Website Designed By” footer card, render the exact provided English content: Name “Aditya Sharma”; Title “Website Designer & Digital Creator”; the full description paragraph; CTA line “Need a Website for Your Business?”; and a small line at the bottom reading “Designed with dedication by Aditya Sharma”.",
+      "files": [
+        "frontend/src/components/layout/Footer.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-17"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-an-instagram-contact-button-in-the-new-footer-card-labeled-contact-me-on-instagram-that-links-to-https-instagram-com-aditya-sharma-30-includes-an-instagram-icon-and-has-a-subtle-hover-animation",
+      "featureTitle": "Add an Instagram contact button in the new footer card labeled “Contact Me on Instagram” that links to https://instagram.com/aditya.sharma.30, includes an Instagram icon, and has a subtle hover animation.",
+      "files": [
+        "frontend/src/components/layout/Footer.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-18"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-keep-the-existing-footer-bottom-credit-line-made-by-aditya-sharma-and-the-existing-copyright-line-with-the-caffeine-ai-referral-link-unchanged-while-adding-the-new-website-designed-by-section",
+      "featureTitle": "Keep the existing footer bottom credit line “Made by Aditya Sharma” and the existing copyright line with the caffeine.ai referral link unchanged while adding the new “Website Designed By” section.",
+      "files": [
+        "frontend/src/components/layout/Footer.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-19"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-the-designer-photo-as-a-static-generated-asset-under-frontend-public-assets-generated-and-display-it-in-the-new-footer-card-as-a-circular-portrait-cropped-to-a-circle-with-appropriate-sizing-across-breakpoints",
+      "featureTitle": "Add the designer photo as a static generated asset under frontend/public/assets/generated and display it in the new footer card as a circular portrait (cropped to a circle) with appropriate sizing across breakpoints.",
+      "files": [
+        "frontend/src/components/layout/Footer.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-20"
       ],
       "confidence": "high"
     }
